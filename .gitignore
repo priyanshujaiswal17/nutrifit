@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.vscode/
+.idea/
+debug.txt
+missing_piece.txt
+nutrifit[0-9]*.py
+app[0-9]*.py
+!nutrifit60.py
+!app.py
