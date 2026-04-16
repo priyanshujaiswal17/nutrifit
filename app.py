@@ -4977,15 +4977,14 @@ def api_feedback_get():
         return jsonify([{"id":r[0],"type":r[1],"subject":r[2],"message":r[3],"rating":r[4],"created_at":str(r[5])} for r in cur.fetchall()])
     finally: close_db(db,cur)
 
-
-if __name__ == "__main__":
-    logger.info("NutriFit v2.0 — starting up")
-    logger.info("Initialising database...")
+# Initialize DB at import time so gunicorn picks it up without __main__
+if db_pool:
     try:
         init_db()
     except Exception as e:
-        logger.error(f"MySQL error: {e}")
-        logger.info("Make sure MySQL is running and the 'nutrifit' database exists.")
-        exit(1)
+        logger.error(f"DB init error: {e}")
+
+if __name__ == "__main__":
+    logger.info("NutriFit — starting up")
     logger.info("Ready → http://localhost:5000")
     app.run(host="0.0.0.0", debug=False, port=int(os.getenv("PORT", "5000")))
