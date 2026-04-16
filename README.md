@@ -1,5 +1,7 @@
 # NutriFit
 
+[![GitHub](https://img.shields.io/badge/GitHub-priyanshujaiswal17%2Fnutrifit-181717?logo=github)](https://github.com/priyanshujaiswal17/nutrifit)
+
 A full-stack nutrition tracking web application built with Flask, MySQL, and the Google Gemini API. Track meals, monitor daily macros, get AI-powered meal suggestions, and manage family members — all from a clean, dark-themed interface.
 
 ---
@@ -49,8 +51,8 @@ A full-stack nutrition tracking web application built with Flask, MySQL, and the
 
 ```bash
 # Clone
-git clone https://github.com/<your-username>/nutrifi.git
-cd nutrifi
+git clone https://github.com/priyanshujaiswal17/nutrifit.git
+cd nutrifit
 
 # Virtual environment
 python -m venv venv
@@ -118,12 +120,10 @@ Copy `.env.example` → `.env` and fill in your values. **Never commit `.env`.**
 
 ---
 
-## Screenshots
-
-> Coming soon
-
----
-
 ## License
 
 MIT
+
+---
+
+> Repository: [github.com/priyanshujaiswal17/nutrifit](https://github.com/priyanshujaiswal17/nutrifit)

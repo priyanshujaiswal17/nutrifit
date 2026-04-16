@@ -51,7 +51,7 @@ Copy `.env.example` to `.env` and fill in your values:
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/<your-username>/nutrifi.git
+git clone https://github.com/priyanshujaiswal17/nutrifit.git
 cd nutrifi
 
 # 2. Create and activate a virtual environment
