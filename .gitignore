@@ -1,13 +1,29 @@
+# Environment variables — never commit real keys
 .env
+
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
 venv/
+.venv/
+env/
+
+# IDEs
 .vscode/
 .idea/
-debug.txt
-missing_piece.txt
-nutrifit[0-9]*.py
-app[0-9]*.py
-!nutrifit60.py
-!app.py
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
